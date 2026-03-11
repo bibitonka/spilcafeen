@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFEBC9;
+    color: #2c2c2c;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    border-radius: 9999px;
+    opacity: 0.8;
+    filter: blur(0.5px);
+}
+
+/* Large teal blob on left */
+body::before {
+    width: 540px;
+    height: 550px;
+    background: #2A9C90;
+    top: 40%;
+    left: -180px;
+    transform: rotate(-14deg);
+}
+
+/* Large orange blob on right */
+body::after {
+    width: 700px;
+    height: 670px;
+    background: #F2AC57;
+    top: 45%;
+    right: -260px;
+    transform: rotate(-18deg);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
